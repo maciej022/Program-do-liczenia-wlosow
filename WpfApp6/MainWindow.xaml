@@ -9,11 +9,14 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="Obwód głowy (cm):" /> 
-            <TextBox x:Name="txtObwod" Width="200" Margin="0,5,0,15"/>
+            <TextBox Name="txtObwod" Width="200" Margin="0,5,0,15"/>
             <TextBlock Text="Wysokość czoła (cm):" />
-            <TextBox x:Name="txtWysokoscCzola" Width="200" Margin="0,5,0,15"/>
+            <TextBox Name="txtWysokoscCzola" Width="200" Margin="0,5,0,15"/>
             <TextBlock Text="Gęstość włosów (ilość włosów na cm²):" />
-            <TextBox x:Name="txtGestosc" Width="200" Margin="0,5,0,15"/>
+            <TextBox Name="txtGestosc" Width="200" Margin="0,5,0,15"/>
+            <Button Content="Oblicz liczbę włosów" Click="Oblicz_Click" Width="200" Margin="0,15"/>
+            <Button Content="Reset" Click="Reset_Click" Width="200" Margin="0,5"/>
+            <TextBlock Name="txtWynik" FontWeight="Bold" Margin="0,15"/>
         </StackPanel>
     </Grid>
 </Window>
